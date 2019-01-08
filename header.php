@@ -49,69 +49,26 @@
                             <input type="submit" value="">
                         </form>
                     </div>
-                    <div class="t456__rightwrapper t456__menualign_right">
-                        <ul class="t456__list menu">
-                            <li class="t456__list_item">
-                                <a class="t-menu__link-item t-active" href="/">Главная</a>
-                            </li>
-                            <li class="t456__list_item uslugi">
-                                <span class="t-menu__link-item link-item-uslugi">Услуги</span>
-                                <ul class="down-uslugi">
-                                    <li>
-                                        <a href="uslugi-item.html" title="Уличная подсветка">Уличная подсветка</a>
-                                    </li>
-                                    <li>
-                                        <a href="uslugi-item.html" title="Фасадная подсветка">Фасадная подсветка</a>
-                                    </li>
-                                    <li>
-                                        <a href="uslugi-item.html" title="Проектные работы">Проектные работы</a>
-                                    </li>
-                                    <li>
-                                        <a href="uslugi-item.html" title="Проаздничная иллюминация">Праздничная
-                                            Иллюминация</a>
-                                    </li>
-                                    <li>
-                                        <a href="uslugi-item.html" title="Спортивное освещение">Спортивное
-                                            освещение</a>
-                                    </li>
-                                    <li>
-                                        <a href="uslugi-item.html" title="Административное освещение">Административное
-                                            освещение</a>
-                                    </li>
-                                    <li>
-                                        <a href="uslugi-item.html" title="Промышленное освещение">Промышленное
-                                            освещение</a>
-                                    </li>
-                                    <li>
-                                        <a href="uslugi-item.html" title="Строительные работы">Строительные работы</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="t456__list_item project">
-                                <span class="t-menu__link-item link-item-project">Проекты</span>
-                                <ul class="down-project">
-                                    <li>
-                                        <a href="street.html" title="Уличная подсветка">Уличная подсветка</a>
-                                    </li>
-                                    <li>
-                                        <a href="street.html" title="Фасадная подсветка">Фасадная подсветка</a>
-                                    </li>
-                                    <li>
-                                        <a href="street.html" title="Проаздничная иллюминация">Праздничная Иллюминация</a>
-                                    </li>
-                                    <li>
-                                        <a href="street.html" title="Спортивное освещение">Спортивное освещение</a>
-                                    </li>
-                                    <li>
-                                        <a href="street.html" title="Административное освещение">Административное освещение</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="t456__list_item click-p"><a class="t-menu__link-item click-p" href="#rec63740744">Партнеры</a></li>
-                            <li class="t456__list_item click-k"><a class="t-menu__link-item click-k" href="#rec47189732">Контакты</a></li>
-                            <li class="t456__list_item"><a class="t-menu__link-item" href="/eng">Eng</a></li>
-                        </ul>
-                    </div>
+										<?php 
+											wp_nav_menu( array(
+												'theme_location'  => 'menu-1',
+												'menu'            => '',
+												'container'       => 'div',
+												'container_class' => 't456__rightwrapper t456__menualign_right',
+												'container_id'    => '',
+												'menu_class'      => 'menu t456__list_item',
+												'menu_id'         => '',
+												'echo'            => true,
+												'fallback_cb'     => 'wp_page_menu',
+												'before'          => '',
+												'after'           => '',
+												'link_before'     => '',
+												'link_after'      => '',
+												'items_wrap'      => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+												'depth'           => 0,
+												'walker'          => new WP_Smart_Light_Navwalker,
+											) );
+										 ?>
                 </div>
             </div>
         </div>
