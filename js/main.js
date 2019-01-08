@@ -78,14 +78,13 @@ $(document).ready(function () {
             $(".t456__mobile").removeClass("t456_opened");
         });
     }
-
-    $(window).on('load', function () {
-        var $preloader = $('.mask-logo'),
-            $svg_anm = $preloader.find('.svg_anm');
-        $svg_anm.fadeOut();
-        $preloader.delay(200).fadeOut('fast');
-    });
-
     
+});
+
+$(window).on('load', function () {
+    var $preloader = $('.mask-logo'),
+        $svg_anm = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(200).fadeOut('fast');
 });
    

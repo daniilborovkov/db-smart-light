@@ -141,6 +141,7 @@ function db_smart_light_scripts() {
 	wp_enqueue_script( 'db-smart-light-hammer', get_template_directory_uri() . '/js/hammer.min.js', array('db-smart-light-jquery'), '20151215', true );
 	wp_enqueue_script( 'db-smart-light-tilda-zoom', get_template_directory_uri() . '/js/tilda-zoom-2.0.min.js', array('db-smart-light-jquery'), '20151215', true );
 	wp_enqueue_script( 'db-smart-light-tilda-forms', get_template_directory_uri() . '/js/tilda-forms-1.0.min.js', array('db-smart-light-jquery'), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-main', get_template_directory_uri() . '/js/main.js', array('db-smart-light-jquery'), '20151215', true );
 
 	wp_enqueue_script( 'db-smart-light-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

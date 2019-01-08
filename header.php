@@ -26,8 +26,4 @@
         <img src="<?php echo get_template_directory_uri() ?>/img/smart-main.png" alt="">
     </div>
   </div>
-	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'db-smart-light' ); ?></a>
-
-
-		<div id="content" class="site-content">
+	<div id="allrecords" class="t-records">
