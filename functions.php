@@ -122,7 +122,25 @@ add_action( 'widgets_init', 'db_smart_light_widgets_init' );
 function db_smart_light_scripts() {
 	wp_enqueue_style( 'db-smart-light-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'db-smart-light-tilda-grid', get_template_directory_uri() . "/css/tilda-grid-3.0.min.css", array(), '2019' );
+	wp_enqueue_style( 'db-smart-light-tilda-blocks', get_template_directory_uri() . "/css/tilda-blocks-2.12.css", array(), '2019' );
+	wp_enqueue_style( 'db-smart-light-tilda-animation', get_template_directory_uri() . "/css/tilda-animation-1.0.min.css", array(), '2019' );
+	wp_enqueue_style( 'db-smart-light-tilda-slds', get_template_directory_uri() . "/css/tilda-slds-1.4.min.css", array(), '2019' );
+	wp_enqueue_style( 'db-smart-light-tilda-zoom', get_template_directory_uri() . "/css/tilda-zoom-2.0.min.css", array(), '2019' );
+	wp_enqueue_style( 'db-smart-light-slick', get_template_directory_uri() . "/slick/slick.css", array(), '2019' );
+	wp_enqueue_style( 'db-smart-light-slick-theme', get_template_directory_uri() . "/slick/slick-theme.css", array(), '2019' );
+	wp_enqueue_style( 'db-smart-light-main', get_template_directory_uri() . "/css/main.css", array(), '2019' );
+
 	wp_enqueue_script( 'db-smart-light-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-jquery', get_template_directory_uri() . '/js/jquery-1.10.2.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-tilda-scripts', get_template_directory_uri() . '/js/tilda-scripts-2.8.min.js', array('db-smart-light-jquery'), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-tilda-blocks', get_template_directory_uri() . '/js/tilda-blocks-2.7.js', array('db-smart-light-jquery'), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-lazyload', get_template_directory_uri() . '/js/lazyload-1.3.min.js', array('db-smart-light-jquery'), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-tilda-animation', get_template_directory_uri() . '/js/tilda-animation-1.0.min.js', array('db-smart-light-jquery'), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-tilda-slds', get_template_directory_uri() . '/js/tilda-slds-1.4.min.js', array('db-smart-light-jquery'), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-hammer', get_template_directory_uri() . '/js/hammer.min.js', array('db-smart-light-jquery'), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-tilda-zoom', get_template_directory_uri() . '/js/tilda-zoom-2.0.min.js', array('db-smart-light-jquery'), '20151215', true );
+	wp_enqueue_script( 'db-smart-light-tilda-forms', get_template_directory_uri() . '/js/js/tilda-forms-1.0.min.js', array('db-smart-light-jquery'), '20151215', true );
 
 	wp_enqueue_script( 'db-smart-light-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
