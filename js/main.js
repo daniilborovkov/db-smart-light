@@ -79,6 +79,13 @@ $(document).ready(function () {
         });
     }
 
+    $(window).on('load', function () {
+        var $preloader = $('.mask-logo'),
+            $svg_anm = $preloader.find('.svg_anm');
+        $svg_anm.fadeOut();
+        $preloader.delay(200).fadeOut('fast');
+    });
+
     
 });
    
