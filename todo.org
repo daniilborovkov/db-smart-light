@@ -3,7 +3,8 @@
     [X] Стили и шрифты
     [X] Картиник
     [X] Скрипты
-    [ ] Header
+    [-] Header
+      [X] Logo and search form
       [ ] Меню
       [ ] Смена языков
     [ ] Footer
