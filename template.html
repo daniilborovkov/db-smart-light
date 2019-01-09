@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Light</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <!-- Camera Slider CSS -->
+    <link href="assets/css/camera.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Boilerplate CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Customize CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css" />
+
+    <!--HTML5shiv Js-->
+    <script src="assets/js/modernizr-3.5.0.min.js"></script>
+
+    <link rel="stylesheet" href="css/tilda-grid-3.0.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/tilda-blocks-2.12.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/tilda-animation-1.0.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/tilda-slds-1.4.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/tilda-zoom-2.0.min.css" type="text/css" media="all">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/tilda-scripts-2.8.min.js"></script>
+    <script src="js/tilda-blocks-2.7.js"></script>
+    <script src="js/lazyload-1.3.min.js"></script>
+    <script src="js/tilda-animation-1.0.min.js"></script>
+    <script src="js/tilda-slds-1.4.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/tilda-zoom-2.0.min.js"></script>
+    <script src="js/tilda-forms-1.0.min.js"></script>
+
+    <script>
+        $(window).on('load', function () {
+            var $preloader = $('.mask-logo'),
+                $svg_anm = $preloader.find('.svg_anm');
+            $svg_anm.fadeOut();
+            $preloader.delay(200).fadeOut('fast');
+        });
+    </script>
+</head>
+<!--[if IE 8]><style>#rec49492190 .t456 { filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D90f1f2e', endColorstr='#D90f1f2e');}</style><![endif]-->
+<body class="t-body" style="margin: 0px;">
+    <div class="mask-logo">
+        <div class="img-logo">
+            <img src="img/smart-main.png" alt="">
+        </div>
+    </div>
+    <!--allrecords-->
+    <div id="allrecords" class="t-records">
+        <!--header-->
+        <div id="t-header" class="t-records">
+            <div id="rec49492190" class="r t-rec t-rec_pb_0 floating">
+                <!-- T456 -->
+                <div class="t456__mobile">
+                    <div class="t456__mobile_container">
+                        <div class="t456__mobile_text t-name t-name_md">&nbsp;</div>
+                        <div class="t456__burger"> <span></span> <span></span> <span></span> <span></span> </div>
+                    </div>
+                </div>
+                <div id="nav49492190" class="t456 t456__hidden t456__positionfixed">
+                    <div class="t456__maincontainer">
+                        <div class="t456__leftwrapper">
+                            <div style="display: block;"> 
+                                <a href="index.html">
+                                    <img src="img/logo-smart.png" class="t456__imglogo t456__imglogomobile" alt=" smart light ">
+                                </a>
+                            </div>
+                            <div class="search">
+                                <input type="search" name="search" placeholder="Поиск...">
+                                <input type="submit" value="">
+                            </div>
+                        </div>
+                        <div class="t456__rightwrapper t456__menualign_right">
+                            <ul class="t456__list menu">
+                                <li class="t456__list_item">
+                                    <a class="t-menu__link-item t-active" href="/">Главная</a>
+                                </li>
+                                <li class="t456__list_item uslugi">
+                                    <span class="t-menu__link-item link-item-uslugi">Услуги</span>
+                                    <ul class="down-uslugi">
+                                        <li>
+                                            <a href="uslugi-item.html" title="Уличная подсветка">Уличная подсветка</a>
+                                        </li>
+                                        <li>
+                                            <a href="uslugi-item.html" title="Фасадная подсветка">Фасадная подсветка</a>
+                                        </li>
+                                        <li>
+                                            <a href="uslugi-item.html" title="Проектные работы">Проектные работы</a>
+                                        </li>
+                                        <li>
+                                            <a href="uslugi-item.html" title="Проаздничная иллюминация">Праздничная
+                                                Иллюминация</a>
+                                        </li>
+                                        <li>
+                                            <a href="uslugi-item.html" title="Спортивное освещение">Спортивное
+                                                освещение</a>
+                                        </li>
+                                        <li>
+                                            <a href="uslugi-item.html" title="Административное освещение">Административное
+                                                освещение</a>
+                                        </li>
+                                        <li>
+                                            <a href="uslugi-item.html" title="Промышленное освещение">Промышленное
+                                                освещение</a>
+                                        </li>
+                                        <li>
+                                            <a href="uslugi-item.html" title="Строительные работы">Строительные работы</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="t456__list_item project">
+                                    <span class="t-menu__link-item link-item-project">Проекты</span>
+                                    <ul class="down-project">
+                                        <li>
+                                            <a href="street.html" title="Уличная подсветка">Уличная подсветка</a>
+                                        </li>
+                                        <li>
+                                            <a href="street.html" title="Фасадная подсветка">Фасадная подсветка</a>
+                                        </li>
+                                        <li>
+                                            <a href="street.html" title="Проаздничная иллюминация">Праздничная Иллюминация</a>
+                                        </li>
+                                        <li>
+                                            <a href="street.html" title="Спортивное освещение">Спортивное освещение</a>
+                                        </li>
+                                        <li>
+                                            <a href="street.html" title="Административное освещение">Административное освещение</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="t456__list_item click-p"><a class="t-menu__link-item click-p" href="#rec63740744">Партнеры</a></li>
+                                <li class="t456__list_item click-k"><a class="t-menu__link-item click-k" href="#rec47189732">Контакты</a></li>
+                                <li class="t456__list_item"><a class="t-menu__link-item" href="/eng">Eng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/header-->
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <!--Camera Slide-->
+                    <div class="smart-main"></div>
+                    <div class="camera_wrap">
+                        <div data-src="img/street.jpg">
+                            <img src="img/street.jpg" alt="">
+                            <div class="camera_caption">
+                                <p>УЛИЧНАЯ ПОДСВЕТКА<br><span>в любой местности</span><br><a href="uslugi-item.html"
+                                        class="podrobnee">Подробнее</a></p>
+
+                            </div>
+                        </div>
+                        <div data-src="img/fasad.jpg">
+                            <img src="img/fasad.jpg" alt="" class="img-responsive">
+                            <div class="camera_caption">
+                                <p>ФАСАДНАЯ ПОДСВЕТКА<br><span>любой сложности</span><br><a href="uslugi-item.html"
+                                        class="podrobnee">Подробнее</a></p>
+
+                            </div>
+                        </div>
+                        <div data-src="img/project.jpg">
+                            <img src="img/project.jpg" alt="">
+                            <div class="camera_caption">
+                                <p>ПРОЕКТНЫЕ РАБОТЫ<br><span></span><br><a href="uslugi-item.html" class="podrobnee">Подробнее</a></p>
+                            </div>
+                        </div>
+                        <div data-src="img/prazdnik.jpg">
+                            <img src="img/prazdnik.jpg" alt="" class="img-responsive">
+                            <div class="camera_caption">
+                                <p>ПРАЗДНИЧНАЯ ИЛЛЮМИНАЦИЯ<br><span></span><br><a href="uslugi-item.html" class="podrobnee">Подробнее</a></p>
+                            </div>
+                        </div>
+                        <div data-src="img/sport.jpg">
+                            <img src="img/sport.jpg" alt="">
+                            <div class="camera_caption">
+                                <p>СПОРТИВНОЕ ОСВЕЩЕНИЕ<br><span>от спортзалов до стадионов</span><br><a href="uslugi-item.html"
+                                        class="podrobnee">Подробнее</a></p>
+                            </div>
+                        </div>
+                        <div data-src="img/admin.jpg">
+                            <img src="img/admin.jpg" alt="">
+                            <div class="camera_caption">
+                                <p>АДМИНИСТРАТИВНОЕ ОСВЕЩЕНИЕ<br><span></span><br><a href="uslugi-item.html" class="podrobnee">Подробнее</a></p>
+                            </div>
+                        </div>
+                        <div data-src="img/prom.jpg">
+                            <img src="img/prom.jpg" alt="">
+                            <div class="camera_caption">
+                                <p>ПРОМЫШЛЕННОЕ ОСВЕЩЕНИЕ<br><span>любых площадей</span><br><a href="uslugi-item.html"
+                                        class="podrobnee">Подробнее</a></p>
+                            </div>
+                        </div>
+                        <div data-src="img/stroy.jpg">
+                            <img src="img/stroy.jpg" alt="">
+                            <div class="camera_caption">
+                                <p>СТРОИТЕЛЬНЫЕ РАБОТЫ<br><span></span><br><a href="uslugi-item.html" class="podrobnee">Подробнее</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Camera Slide End-->
+                </div>
+                <!--***********  Row End-->
+            </div>
+            <!--************** Container End-->
+        </div>
+        <div id="rec49031036" class="r t-rec t-rec_pt_60 t-rec_pb_0">
+            <div id="uslugi"></div>
+            <!-- T795 -->
+            <div class="t795">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <h2 class="t795__title t-title t-title_xs t-margin_auto">Что мы делаем ?</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec47149118" class="r t-rec t-rec_pt_15 t-rec_pb_75 r_showed r_anim">
+            <!-- T075 -->
+            <div class="t075">
+                <div class="t-container">
+                    <div class="line-1">
+                        <ul>
+                            <li class="item-our-uslug">
+                                <a href="street.html" class="link" title="Уличная подсветка">
+                                    <img src="img/street.png" alt="Уличная подсветка">
+                                    <div class="title-item">Уличная подсветка</div>
+                                    <div class="text-item">Световые интро, визуальные концепции, сценография, 3d
+                                        mapping, проекционные шоу, визуализация проекта</div>
+                                </a>
+                            </li>
+
+                            <li class="item-our-uslug">
+                                <a href="/" class="link" title="Фасадная подсветка">
+                                    <img src="img/facad.png" alt="Фасадная подсветка">
+                                    <div class="title-item">Фасадная подсветка</div>
+                                    <div class="text-item">Световые интро, визуальные концепции, сценография, 3d
+                                        mapping, проекционные шоу, визуализация проекта</div>
+                                </a>
+                            </li>
+
+                            <li class="item-our-uslug">
+                                <a href="/" class="link" title="Проектные работы">
+                                    <img src="img/project.png" alt="Проектные работы">
+                                    <div class="title-item">Проектные работы</div>
+                                    <div class="text-item">Световые интро, визуальные концепции, сценография, 3d
+                                        mapping, проекционные шоу, визуализация проекта</div>
+                                </a>
+                            </li>
+
+                            <li class="item-our-uslug">
+                                <a href="/" class="link" title="Праздничная иллюминация">
+                                    <img src="img/prazdnik.png" alt="Праздничная иллюминация">
+                                    <div class="title-item">Праздничная иллюминация</div>
+                                    <div class="text-item">Световые интро, визуальные концепции, сценография, 3d
+                                        mapping, проекционные шоу, визуализация проекта</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="line-2">
+                        <ul>
+                            <li class="item-our-uslug">
+                                <a href="/" class="link" title="Спортивное освещение">
+                                    <img src="img/sport.png" alt="Спортивное освещение">
+                                    <div class="title-item">Спортивное освещение</div>
+                                    <div class="text-item">Световые интро, визуальные концепции, сценография, 3d
+                                        mapping, проекционные шоу, визуализация проекта</div>
+                                </a>
+                            </li>
+
+                            <li class="item-our-uslug">
+                                <a href="/" class="link" title="Административное освещение">
+                                    <img src="img/admin.png" alt="Административное освещение">
+                                    <div class="title-item">Административное освещение</div>
+                                    <div class="text-item">Световые интро, визуальные концепции, сценография, 3d
+                                        mapping, проекционные шоу, визуализация проекта</div>
+                                </a>
+                            </li>
+
+                            <li class="item-our-uslug">
+                                <a href="/" class="link" title="Промышленное освещение">
+                                    <img src="img/prom.png" alt="Промышленное освещение">
+                                    <div class="title-item">Промышленное освещение</div>
+                                    <div class="text-item">Световые интро, визуальные концепции, сценография, 3d
+                                        mapping, проекционные шоу, визуализация проекта</div>
+                                </a>
+                            </li>
+
+                            <li class="item-our-uslug">
+                                <a href="/" class="link" title="Строительные работы">
+                                    <img src="img/stroy.png" alt="Строительные работы">
+                                    <div class="title-item">Строительные работы</div>
+                                    <div class="text-item">Световые интро, визуальные концепции, сценография, 3d
+                                        mapping, проекционные шоу, визуализация проекта</div>
+                                </a>   
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec47149120" class="r t-rec t-rec_pb_0 r_anim r_showed">
+            <div class="t-cover" id="recorddiv47149120">
+                <div class="t476">
+                    <div class="t-container">
+                        <div class="t476__col t-width t-width_10">
+                            <div class="t-cover__wrapper t-valign_middle">
+                                <div class="t476__wrapper" data-hook-content="covercontent">
+                                    <div class="t476__content">
+                                        <h2 class="t476__title t-title t-title_md t-margin_auto t-animate t-animate_started">О компании</h2>
+                                        <div class="t476__line" style=""></div>
+                                        <div class="t476__descr t-descr t-descr_md t-margin_auto">
+                                            «Smart Light» - группа
+                                            компаний, занимается разработкой и реализацией проектов наружного и
+                                            внутреннего освещения, предлагает своим клиентам архитектурные,
+                                            дизайнерские решения в
+                                            освещении.<br><br>Предприятие обеспечивает своим Партнерам высокий
+                                            уровень сотрудничества,
+                                            который базируется на профессионализме наших сотрудников, качественных
+                                            консультациях
+                                            специалистов, оперативности выполнения заказов, стабильности и
+                                            надежности предприятия.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec63740744" class="r t-rec t-rec_pt_45 t-rec_pb_0 r_anim r_showed">
+            <!-- T795 -->
+            <div class="t795">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <h2 class="t795__title t-title t-title_xs t-margin_auto">Наши Партнеры</h2>
+                        <div class="t795__descr t-descr t-descr_xl t-margin_auto">
+                            Кроме работы с коммунальными
+                            предприятиями, компания имеет большой опыт работы с
+                            коммерческими и промышленными структурами. Нашими постоянными партнерами - клиентами
+                            являются такие предприятия как:
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec49030185" class="r t-rec t-rec_pt_15 t-rec_pb_15 r_anim r_showed">
+            <div class="slider-content">
+                <div class="autoplay">
+                    <a href="">
+                        <div><img src="img/sbu.png" alt=""></div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/energo.jpg" alt=""></div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/kulinich.png" alt=""></div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/mirgorod.png" alt=""></div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/nafgaz.jpg" alt=""> </div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/ostchem.jpg" alt=""></div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/privat.jpg" alt=""></div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/ukrgaz.png" alt=""></div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/ukrzaliz.jpg" alt=""></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="rec47149122" class="r t-rec t-rec_pt_30 t-rec_pb_45 r_anim r_showed">
+            <!-- T795 -->
+            <div class="t795">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <div class="t795__title t-title t-title_xs t-margin_auto">Наши проекты</div>
+                        <div class="t795__descr t-descr t-descr_xl t-margin_auto">Каждый год мы участвовуем в создании более 120 мероприятий</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec47153601" class="r t-rec t-rec_pt_0 t-rec_pb_0">
+            <!-- t552-->
+            <div class="t552">
+                <div class="t552__container t-container_100 ">
+                    <div class="t552__tile t552__tile_25">
+                        <div class="t552__blockimg t552__blockimg_animated t-bgimg loaded t552_img"
+                        style="background-image: url('img/751bccb9-7f69-47b6-9.jpg');">
+                        </div>
+                    </div>
+                    <div class="t552__tile t552__tile_25" >
+                        <div class="t552__blockimg t552__blockimg_animated t-bgimg loaded t552_img"
+                        style="background-image: url(img/Life_is_good_4.jpg);">
+                        </div>
+                    </div>
+                    <div class="t552__tile t552__tile_25">
+                        <div class="t552__blockimg t552__blockimg_animated t-bgimg loaded t552_img"
+                        style="background-image: url(img/_5PNG.jpg);">
+                        </div>
+                    </div>
+                    <div class="t552__tile t552__tile_25">
+                        <div class="t552__blockimg t552__blockimg_animated t-bgimg loaded t552_img"
+                        style="background-image: url(img/MediaIn_2-2.jpg);">
+                        </div>
+                    </div>
+                    <div class="t552__tile t552__tile_25">
+                        <div class="t552__blockimg t552__blockimg_animated t-bgimg loaded t552_img"
+                        style="background-image: url(img/_5.jpg);">
+                        </div>
+                    </div>
+                    <div class="t552__tile t552__tile_25">
+                        <div class="t552__blockimg t552__blockimg_animated t-bgimg loaded t552_img"
+                        style="background-image: url(img/_3.jpg);">
+                        </div>
+                    </div>
+                    <div class="t552__tile t552__tile_25">
+                        <div class="t552__blockimg t552__blockimg_animated t-bgimg loaded t552_img"
+                        style="background-image: url(img/startpage_course_60b.jpg);">
+                        </div>
+                    </div>
+                    <div class="t552__tile t552__tile_25">
+                        <div class="t552__blockimg t552__blockimg_animated t-bgimg loaded t552_img"
+                        style="background-image: url(img/_1.jpg);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec47154552" class="r t-rec t-rec_pt_30 t-rec_pb_30 r_hidden r_anim">
+            <div class="t142">
+                <div class="t-container_100">
+                    <div class="t142__wrapone">
+                        <div class="t142__wraptwo">
+                            <a href="/projects" title="Смотреть подробнее" class="">
+                                <div class="t-btn t142__submit ">Смотреть подробнее</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec47158496" class="r t-rec t-rec_pt_0 t-rec_pb_60">
+            <div class="t-cover" id="recorddiv47158496">
+                <div class="t698">
+                    <div class="t-container t698__nomargin">
+                        <div class="t-width t-width_12 t698__mainblock">
+                            <div class="t-cover__wrapper t-valign_middle">
+                                <div class="t698__mainwrapper">
+                                    <div class="t698__title t-title t-title_xs">
+                                        Мы знаем, как должно выглядеть ваше шоу
+                                    </div>
+                                    <div class="t698__descr t-descr t-descr_md">
+                                        Напишите нам
+                                    </div>
+                                    <div class="t-animate t-animate_wait">
+                                        <form id="form47158496" name="form47158496" action="#" method="POST" class="t-form js-form-proccess t-form_inputs-total_4 t-form_bbonly">
+                                            <input type="hidden" name="formservices[]" value="64af13d5f63e6c60df25c62e5cebf27c" class="js-formaction-services">
+                                            <div class="js-successbox t-form__successbox t-text t-text_md">Спасибо! Ваши данные отправлены.</div>
+                                            <div class="t-form__inputsbox">
+                                                <div class="t-input-group t-input-group_em">
+                                                    <div class="t-input-title t-descr t-descr_md">Ваш email</div>
+                                                    <div class="t-input-block">
+                                                        <input type="text" name="Email" class="t-input js-tilda-rule t-input_bbonly" value="">
+                                                        <div class="t-input-error"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-input-group t-input-group_nm">
+                                                    <div class="t-input-title t-descr t-descr_md">Имя</div>
+                                                    <div class="t-input-block">
+                                                        <input type="text" name="Name" class="t-input js-tilda-rule t-input_bbonly" value="">
+                                                        <div class="t-input-error"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-input-group t-input-group_ph">
+                                                    <div class="t-input-title t-descr t-descr_md">Телефон</div>
+                                                    <div class="t-input-block">
+                                                        <input type="tel" name="Phone" class="t-input js-tilda-rule js-tilda-mask t-input_bbonly" pattern="[0-9]*" data-tilda-mask="+380 (99) 999-99-99">
+                                                        <div class="t-input-error"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-input-group t-input-group_ta">
+                                                    <div class="t-input-title t-descr t-descr_md">Описание задачи или вопрос</div>
+                                                    <div class="t-input-block">
+                                                        <textarea name="Описание задачи или вопрос" class="t-input js-tilda-rule t-input_bbonly" rows="3"></textarea>
+                                                        <div class="t-input-error"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-form__submit">
+                                                    <button type="submit" class="t-submit">Отправить</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec47189732" class="r t-rec t-rec_pt_90 t-rec_pb_90">
+            <!-- t564-->
+            <div class="t564">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-align_center">
+                        <img src="img/smart-blue.png" alt="" class="t564__img">
+                        <div class="t564__small-wrapper">
+                            <div class="t564__text t-text t-text_md">
+                                <div class="t564_text" style="color:#000000;">
+                                    +38 0532 56 31 75
+                                    <br>
+                                    <a class="t564_email" href="mailto:info@smart-light.ua">info@smart-light.ua</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/allrecords-->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+
+    <script src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--Camera JS with Required jQuery Easing Plugin-->
+    <script src="assets/js/easing.min.js"  async></script>
+    <script src="assets/js/camera.min.js" async></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js" async></script>
+    <!-- Custom JS -->
+    <script src="assets/js/plugins.js" async></script>
+</body>
+</html>

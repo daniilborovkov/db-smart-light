@@ -74,3 +74,10 @@
         </div>
     </div>
     <!--/header-->
+
+    <div class="main">
+            <div class="container">
+                <div class="row">
+
+    <?php
+    pll_the_languages();

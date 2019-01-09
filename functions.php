@@ -179,4 +179,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Header menu walker
+ */
 require get_template_directory() . '/inc/walker.php';
+
+/**
+ * TGM
+ */
+require get_template_directory() . '/tgm/tgm.php';

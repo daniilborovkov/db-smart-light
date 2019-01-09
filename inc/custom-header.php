@@ -70,3 +70,43 @@ if ( ! function_exists( 'db_smart_light_header_style' ) ) :
 		<?php
 	}
 endif;
+
+function db_smart_light_add_language_switcher_dropdown($items, $args) {
+	// 1. check if polylang exists
+	if (!function_exists('pll_the_languages')) {
+		return $items;
+	}
+	// 2. get languages
+	$translations = pll_the_languages(array('raw'=>1));
+
+	$current_lang = pll_current_language();
+
+	$id = 999999999999876;
+
+	$current_item = array(
+		'title' => $translations[$current_lang]['slug'],
+		'menu_item_parent' => 0,
+		'ID' => $id,
+		'db_id' => $id,
+		'url' => $translations[$current_lang]['url'],
+	);
+	$items[] = (object) $current_item;
+
+	foreach ($translations as $key => $translation) {
+		if ($key != $current_lang) {
+			$item = array(
+				'title' =>$translation['slug'],
+				'menu_item_parent' => $id,
+				'url' => $translation['url'],
+				'ID' => '',
+				'db_id' => ''
+			);
+			$items[] = (object) $item;
+		}
+	}
+	
+	// 3. render languages
+	// 
+	return $items;
+}
+add_filter('wp_nav_menu_objects', 'db_smart_light_add_language_switcher_dropdown', 10, 2);
